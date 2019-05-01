@@ -2,9 +2,6 @@
 # Author: Simon Lee
 # Date: May 2019
 
-# Clear Screen  
-Clear
-
 #!/bin/bash
 # Check Operating System Type
 

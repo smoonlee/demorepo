@@ -17,9 +17,10 @@ echo "#############################################"
 # Print Operating Sytem Type
 . /etc/os-release
 if [ $ID = 'ubuntu' ]; then
-echo $VERSION
+echo $PRETTY_NAME
 echo "I'm Ubuntu"
 elif [ $ID = 'centos' ]; then
-echo $VERSION
-echo "I'm CENTOS/RHEL"
+echo $PRETTY_NAME
+echo ""
+yum update -y
 fi

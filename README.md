@@ -6,7 +6,7 @@ Simon - Testing GitHub Repo
 # Ubuntu
 apt update && apt install sudo wget curl nano
 
-#CentOS 
+# CentOS 
 yum install sudo nano wget 
 
 # Download Demo Repo Setup Files

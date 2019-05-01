@@ -2,6 +2,14 @@
 # Author: Simon Lee
 # Date: May 2019
 
+# Clear Screen
+if [ -f /usr/bin/clear]; then
+  /usr/bin/clear
+else
+  clear
+fi
+
+
 #!/bin/bash
 echo "#############################################"
 echo "#                                           #"
@@ -16,6 +24,7 @@ echo "#############################################"
 DockerContainer=/.dockerenv
 if [ -f $DockerContainer ]; then
 # https://unix.stackexchange.com/questions/432816/grab-id-of-os-from-etc-os-release
+echo ""
 echo "Running in a Docker Container"
 
 # Print Operating Sytem Type

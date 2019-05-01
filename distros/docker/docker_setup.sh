@@ -17,11 +17,15 @@ echo "#############################################"
 # Print Operating Sytem Type
 . /etc/os-release
 if [ $ID = 'ubuntu' ]; then
-echo $PRETTY_NAME
+echo ""
+echo "Operating System: $PRETTY_NAME"
+echo ""
 apt update && apt upgrade -y
+apt -y install apt-utils
 
 elif [ $ID = 'centos' ]; then
-echo $PRETTY_NAME
+echo "Operating System: $PRETTY_NAME"
 echo ""
 yum update -y
+yum -y install yum-utils
 fi

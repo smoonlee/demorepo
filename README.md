@@ -3,11 +3,11 @@ Simon - Testing GitHub Repo
 
 # Docker Testing Setup 
 
-Ubuntu 
-apt update && apt install sudo wget curl
+# Ubuntu
+apt update && apt install sudo wget curl nano
 
-CentOS 
-yum install sudo
+#CentOS 
+yum install sudo nano wget 
 
 # Download Demo Repo Setup Files
 ```shell

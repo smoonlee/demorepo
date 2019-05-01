@@ -10,7 +10,7 @@ fi
 echo "#############################################"
 echo "#                                           #"
 echo "#        GitHub : Demo Repository           #"
-echo "#      Docker Inital Setup Script 2019      #"
+echo "#   Docker Initial Package & Repo Updates   #"
 echo "#                                           #"
 echo "#############################################"
 
@@ -18,7 +18,8 @@ echo "#############################################"
 . /etc/os-release
 if [ $ID = 'ubuntu' ]; then
 echo $PRETTY_NAME
-echo "I'm Ubuntu"
+apt update && apt upgrade -y
+
 elif [ $ID = 'centos' ]; then
 echo $PRETTY_NAME
 echo ""

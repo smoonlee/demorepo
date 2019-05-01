@@ -1,4 +1,12 @@
 #!/bin/bash
+
+# Clear Screen
+if [ -f /usr/bin/clear]; then
+  /usr/bin/clear
+else
+  clear
+fi
+
 echo "#############################################"
 echo "#                                           #"
 echo "#        GitHub : Demo Repository           #"

@@ -29,7 +29,7 @@ echo "Running in a Docker Container"
 echo ""
 echo "Launching... Docker Setup Script"
 /bin/bash ./distros/docker/docker_setup.sh
-
+fi
 # Debian/Ubuntu 
 
 # CentOS/RHEL

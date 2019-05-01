@@ -12,7 +12,7 @@ if [ -f $DockerContainer ]; then
 echo "Running in a Docker Container"
 if [ -f /etc/os-release]; then
 . /etc/os-release
-echo "Operating System: $VERSION
+echo "Operating System: $VERSION"
 fi
 fi
 

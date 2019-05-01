@@ -26,10 +26,9 @@ if [ -f $DockerContainer ]; then
 echo ""
 echo "Running in a Docker Container"
 
-# Print Operating Sytem Type
-. /etc/os-release
-echo "Operating System: $VERSION"
-fi
+echo ""
+echo "Launching... Docker Setup Script"
+/bin/bash ./distros/docker_setup.sh
 
 # Debian/Ubuntu 
 

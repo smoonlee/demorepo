@@ -36,5 +36,5 @@ echo "Launching... Ubuntu Setup Script"
 
 # CentOS/RHEL
 echo ""
-echo "Launching... RHEL Setup Script"
-/bin/bash ./distros/rhel/rhel_setup.sh
+echo "Launching... CentOS Setup Script"
+/bin/bash ./distros/centos/centos_setup.sh

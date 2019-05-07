@@ -30,5 +30,11 @@ echo "Launching... Docker Setup Script"
 /bin/bash ./distros/docker/docker_setup.sh
 fi
 # Debian/Ubuntu 
+echo ""
+echo "Launching... Ubuntu Setup Script"
+/bin/bash ./distros/ubuntu/ubtunu_setup.sh
 
 # CentOS/RHEL
+echo ""
+echo "Launching... RHEL Setup Script"
+/bin/bash ./distros/rhel/rhel_setup.sh

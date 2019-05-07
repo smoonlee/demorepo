@@ -32,7 +32,7 @@ fi
 # Debian/Ubuntu 
 echo ""
 echo "Launching... Ubuntu Setup Script"
-/bin/bash ./distros/ubuntu/ubtunu_setup.sh
+/bin/bash ./distros/ubuntu/ubuntu_setup.sh
 
 # CentOS/RHEL
 echo ""

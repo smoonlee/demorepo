@@ -30,10 +30,13 @@ echo " Updating Local System Packages "
 echo "################################"
 echo ""
 yum -y update
-yum -y install yum-utils wget expect
+yum -y install yum-utils wget expect python-devel epel-release 
+yum -y groupinstall 'Development Tools'
 
-bash /tmp/smoonlee-demorepo-1e58d2e/distros/centos/centos_setup_webservice.sh
-bash /tmp/smoonlee-demorepo-1e58d2e/distros/centos/centos_setup_mailservice.sh
+bash /tmp/smoonlee-demorepo-1e58d2e/distros/centos/install_webserver.sh
+bash /tmp/smoonlee-demorepo-1e58d2e/distros/centos/install_mysqlserver.sh
+bash /tmp/smoonlee-demorepo-1e58d2e/distros/centos/install_pureftpd.sh
+bash /tmp/smoonlee-demorepo-1e58d2e/distros/centos/install_binddns.sh
 
 echo "Root Admin Account:"
 echo " Username: Root"

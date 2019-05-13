@@ -18,6 +18,7 @@ echo "#                                           #"
 echo "#############################################"
 
 # Check Operating System Type
+. /etc/os-release
 
 # Docker Container
 if [ -f /.dockerenv ]; then
@@ -29,12 +30,17 @@ echo ""
 echo "Launching... Docker Setup Script"
 /bin/bash ./distros/docker/docker_setup.sh
 fi
-# Debian/Ubuntu 
+
+# Debian/Ubuntu
+if [ $ID = 'ubuntu' ];then
 echo ""
 echo "Launching... Ubuntu Setup Script"
 /bin/bash ./distros/ubuntu/ubuntu_setup.sh
+fi
 
 # CentOS/RHEL
+if [ $ID = 'centos' ];then
 echo ""
 echo "Launching... CentOS Setup Script"
 /bin/bash ./distros/centos/centos_setup.sh
+fi
